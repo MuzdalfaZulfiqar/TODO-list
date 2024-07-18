@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    
+
+    color: black;
+    background-color: rgb(99 72 167 / 22%);
+    min-height: 95vh;
+    width: 40vw;
+    border: 1px solid rgb(99 72 167 / 22%);
+    border-radius: 14px;
+    margin: 10px auto;
+    /* max-height: 1900px; */
+    height: auto;
+  }
+  .taskInput {
+    position: relative;
+    display: flex;
+    margin: 12px 10px;
+  }
+  .taskInput input {
+    width: 500px;
+    width: 38vw;
+    height: 30px;
+    border-radius: 40px;
+    border: 1px solid white;
+    padding: 2px 14px;
+    height: 38px;
+  }
+  .tskButton {
+    position: absolute;
+    z-index: 12;
+    left: 78%;
+    top: 9%;
+  }
+  .taskInput input ::placeholder {
+    padding: 10px;
+  }
+  .Button {
+    width: 100px;
+    height: 28px;
+    border-radius: 14px;
+    background-color: #9977d3;
+    border: 1px solid #9977d3;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .item {
+    /* padding: 10px 10px; */
+    display: flex;
+    margin: 13px 58px;
+    gap: 12px;
+
+    padding: 6px 16px;
+    display: flex;
+    margin: 12px 22px;
+    gap: 12px;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .input[type="checkbox"] {
+    width: 30px;
+    height: 35px;
+  }
+
+  @media (min-width: 1374px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 79%;
+      top: 9%;
+    }
+    .taskInput input {
+        width: 52vw;
+        height: 30px;
+        border-radius: 40px;
+        border: 1px solid white;
+        padding: 2px 14px;
+        height: 38px;
+    }
+  }
+  /* 1175 1156 1214 1075 */
+  @media (min-width: 1075px) and (max-width: 1214px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 75%;
+      top: 9%;
+    }
+  }
+  @media (min-width: 978px) and (max-width: 1074px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 72%;
+      top: 9%;
+    }
+  }
+  @media (min-width: 859px) and (max-width: 978px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 77%;
+      top: 9%;
+    }
+    .container {
+      width: 56vw;
+    }
+    .taskInput input {
+        width: 54vw;
+      }
+  }
+
+  @media (min-width: 750px) and (max-width: 859px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 76%;
+      top: 9%;
+    }
+
+    .container {
+      width: 60vw;
+    }
+    .taskInput input {
+        width: 58vw;
+      }
+  }
+  @media (min-width: 675px) and (max-width: 749px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 73%;
+      top: 9%;
+    }
+    .container {
+      width: 60vw;
+    }
+    .taskInput input {
+        width: 58vw;
+      }
+  }
+  @media (min-width: 586px) and (max-width: 674px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 69%;
+      top: 9%;
+    }
+    .container {
+      
+      width: 60vw;
+    }
+    .taskInput input {
+        width: 58vw;
+      }
+  }
+  @media (min-width: 486px) and (max-width: 585px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 69%;
+      top: 9%;
+    }
+    .container {
+      width: 70vw;
+    }
+    .taskInput input {
+        width: 86vw;
+      }
+  }
+
+  @media (max-width: 486px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 54%;
+      top: 9%;
+    }
+
+    .container {
+      width: 90vw;
+    }
+    .taskInput input {
+        width: 88vw;
+      }
+  }
+
+  @media (min-width: 311px) and (max-width: 350px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 62%;
+      top: 9%;
+    }
+  }
+
+  @media (min-width: 351px) and (max-width: 400px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 65%;
+      top: 9%;
+    }
+  }
+
+  @media (min-width: 401px) and (max-width: 500px) {
+    .tskButton {
+      position: absolute;
+      z-index: 12;
+      left: 71%;
+      top: 9%;
+    }
+
+    .container {
+      color: black;
+      background-color: rgb(99 72 167 / 22%);
+      min-height: 95vh;
+      width: 90vw;
+      border: 1px solid rgb(99 72 167 / 22%);
+      border-radius: 14px;
+      margin: 0px auto;
+      max-height: 1900px;
+    }}

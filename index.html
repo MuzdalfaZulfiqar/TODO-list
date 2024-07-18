@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="taskInput">
+          <input type="text" name="" id="task" placeholder="Add new task" />
+          <div class="tskButton">
+            <button class="Button">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom"></div>
+    </div>
+
+    <script>
+      let input = document.getElementById("task");
+
+      console.log(input);
+      input.addEventListener("click", function () {
+        input.style.outline = "none";
+        input.style.border = "2px solid #9977d3";
+        console.log(input);
+      });
+
+      let btnList = document.getElementsByClassName("Button");
+      let btn = btnList[0];
+      console.log(btn);
+      let p = 1;
+      btn.addEventListener("click", function () {
+        let textFromInput = input.value;
+        // console.log(textFromInput);
+        input.value = "";
+        let bottom = document.getElementsByClassName("bottom");
+        let newItem = document.createElement("div");
+        newItem.setAttribute("class", "item");
+        newItem.setAttribute("id", `item_${p}`);
+        p++;
+        bottom[0].append(newItem);
+
+        let checkBox = document.createElement("div");
+        checkBox.setAttribute("class", "check");
+        checkBox.innerHTML = '<input type="checkbox">';
+        newItem.append(checkBox);
+
+        console.log("ino " + checkBox);
+        let ino = checkBox.childNodes[0];
+        ino.style.width = "20px";
+        ino.style.height = "20px";
+        // ino.style.border = "3px solid yellow";
+        // ino.addEventListener("click", function(){
+        //   if()
+        // })
+
+        let newText = document.createElement("div");
+        newText.setAttribute("class", "newText");
+        let str = `<div>${textFromInput}</div>`;
+        newText.innerHTML = str;
+        newItem.append(newText);
+
+        let cross = document.createElement("div");
+        cross.setAttribute("class", "cross");
+        cross.innerHTML = "X";
+        newItem.append(cross)
+
+        // let checkClass = document.getElementsByClassName("check");
+        // console.log("checkbox "  + checkClass.childNodes[0]);
+        // let text = document.getElementsByClassName("newText");
+        console.log("text" + textFromInput);
+
+        checkBox.addEventListener("click", function () {
+          let CheckInput = checkBox.querySelector("input");
+          console.log(CheckInput);
+          if (CheckInput.checked) {
+            console.log(newText.innerText);
+
+            newText.style.textDecoration = "line-through";
+            // this will give us the checkbox
+            // text[0].style.textDecoration = "line-throught";
+
+            CheckInput.style.accentColor = "#9977d3";
+          } else {
+            //  newText.innerText.style.textDecoration = "none"
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
